@@ -22,6 +22,7 @@ fetch_clip() {
     yes | ffmpeg -loglevel quiet -i "./$outname.wav" -ss "$2" -to "$3" "./${outname}_out.wav"
     mv "./${outname}_out.wav" "./$outname.wav"
     #gzip "./$outname.wav"
+    sleep 1
   else
     # Give the user a chance to Ctrl+C.
     sleep 1
