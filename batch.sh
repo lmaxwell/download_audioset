@@ -1,1 +1,2 @@
-cat unbalanced_train_segments.csv | bash download.sh
+cat x00 | bash download.sh
+
